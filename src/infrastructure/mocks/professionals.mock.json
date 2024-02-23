@@ -1,0 +1,60 @@
+{
+  "professionals": [
+    {
+      "age": 17,
+      "educationLevel": "high_school",
+      "pastExperiences": {
+        "sales": false,
+        "support": true
+      },
+      "internetTest": {
+        "downloadSpeed": 50.4,
+        "uploadSpeed": 4.2
+      },
+      "writingScore": 0.3,
+      "referralCode": "token1234"
+    },
+    {
+      "age": 18,
+      "educationLevel": "high_school",
+      "pastExperiences": {
+        "sales": true,
+        "support": true
+      },
+      "internetTest": {
+        "downloadSpeed": 5,
+        "uploadSpeed": 4.9
+      },
+      "writingScore": 0.6,
+      "referralCode": "token"
+    },
+    {
+      "age": 35,
+      "educationLevel": "no_education",
+      "pastExperiences": {
+        "sales": false,
+        "support": true
+      },
+      "internetTest": {
+        "downloadSpeed": 50.1,
+        "uploadSpeed": 50
+      },
+      "writingScore": 0.7,
+      "referralCode": "token5678"
+    },
+    {
+      "age": 55,
+      "educationLevel": "bachelors_degree_or_high",
+      "pastExperiences": {
+        "sales": false,
+        "support": false
+      },
+      "internetTest": {
+        "downloadSpeed": 60.4,
+        "uploadSpeed": 0
+      },
+      "writingScore": 0.9,
+      "referralCode": "senha"
+    }
+  ]
+}
