@@ -1,0 +1,16 @@
+{
+  "educationLevels": [
+    {
+      "level": "no_education",
+      "score": 0
+    },
+    {
+      "level": "high_school",
+      "score": 1
+    },
+    {
+      "level": "bachelors_degree_or_high",
+      "score": 2
+    }
+  ]
+}
