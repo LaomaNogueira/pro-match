@@ -16,7 +16,7 @@
     "test:integ": "jest -c ./tests/jest-integration.ts",
     "test:cov": "jest --coverage -c ./tests/jest.config.ts",
     "test:unit": "jest -c ./tests/jest-unit.ts",
-    "test:watch": "jest -c ./tests/jest-unit.ts --watch",
+    "test:watch": "jest -c ./tests/jest-unit.ts --watchAll",
     "test:clearcache": "jest --clearCache"
   },
   "dependencies": {
