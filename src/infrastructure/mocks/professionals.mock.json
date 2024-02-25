@@ -55,6 +55,20 @@
       },
       "writingScore": 0.9,
       "referralCode": "senha"
+    },
+    {
+      "age": 39,
+      "educationLevel": "bachelors_degree_or_high",
+      "pastExperiences": {
+        "sales": true,
+        "support": true
+      },
+      "internetTest": {
+        "downloadSpeed": 60.4,
+        "uploadSpeed": 75.3
+      },
+      "writingScore": 0.9,
+      "referralCode": "token1234"
     }
   ]
 }
