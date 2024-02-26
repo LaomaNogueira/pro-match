@@ -1,7 +1,7 @@
 import { IProfessional } from '@/domain/entities/utils/professional.interface';
 import { AssignProjectsResponseDto } from '@/application/use-cases/utils/assign-projects-response.dto';
 import { CalculateEligibilityScore } from '@/application/use-cases/calculate-eligibility-score';
-import * as projectsData from '@/infrastructure/mocks/projects.mock.json';
+import * as projectsData from '@/infrastructure/sample-data/projects.mock.json';
 import { IProject } from '@/domain/entities/utils/project.interface';
 import { FilterProjectsResponseDto } from '@/application/use-cases/utils/filter-projects-response.dto';
 
