@@ -1,3 +1,4 @@
+import { professionalRouter } from '@/main/config/routes/professional.router';
 import { Express, Request, Response, Router } from 'express';
 
 export function setupRoutes(app: Express): void {
@@ -11,4 +12,6 @@ export function setupRoutes(app: Express): void {
       return response.status(error.status).send(error);
     }
   });
+
+  router.use('/pros/', professionalRouter);
 }
