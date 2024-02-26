@@ -36,7 +36,7 @@ export class AssignProjectsToTheProfessional {
       eligibleProjects.push(project.name);
     }
 
-    const selectedProject = eligibleProjects ? eligibleProjects[0] : '';
+    const selectedProject = eligibleProjects.length ? eligibleProjects[0] : '';
 
     return {
       selectedProject,
