@@ -1,7 +1,7 @@
 import { createMock } from '@golevelup/ts-jest';
 import { CalculateEligibilityScore } from '../../../../src/application/use-cases/calculate-eligibility-score';
 import { AssignProjectsToTheProfessional } from '../../../../src/application/use-cases/assign-projects-to-the-professional';
-import { IProfessional } from '../../../../src/domain/entitites/utils/professional.interface';
+import { IProfessional } from '../../../../src/domain/entities/utils/professional.interface';
 
 describe('SRC :: APPLICATION :: USE CASES :: ASSIGN PROJECTS TO THE PROFESSIONAL', () => {
   const calculateEligibilityScoreMock: CalculateEligibilityScore = createMock<CalculateEligibilityScore>({

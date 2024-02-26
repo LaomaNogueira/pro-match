@@ -1,5 +1,5 @@
 import { CalculateEligibilityScore } from '../../../../src/application/use-cases/calculate-eligibility-score';
-import { IProfessional } from '../../../../src/domain/entitites/utils/professional.interface';
+import { IProfessional } from '../../../../src/domain/entities/utils/professional.interface';
 
 describe('SRC :: APPLICATION :: USE CASES :: CALCULATE ELIGIBILITY SCORE', () => {
   const calculateEligibilityScore: CalculateEligibilityScore = new CalculateEligibilityScore();
