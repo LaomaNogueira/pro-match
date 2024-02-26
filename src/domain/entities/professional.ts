@@ -1,10 +1,11 @@
-import { IProfessional } from '@/domain/entitites/utils/professional.interface';
-import { InternetTest } from '@/domain/entitites/utils/internet-test';
-import { PastExperiences } from '@/domain/entitites/utils/past-experiences';
+import { IProfessional } from '@/domain/entities/utils/professional.interface';
+import { InternetTest } from '@/domain/entities/utils/internet-test';
+import { PastExperiences } from '@/domain/entities/utils/past-experiences';
+import { EducationLevel } from '@/application/use-cases/utils/education-level.enum';
 
 export class Professional implements IProfessional {
   age: number;
-  educationLevel: string;
+  educationLevel: EducationLevel;
   pastExperiences: PastExperiences;
   internetTest: InternetTest;
   writingScore: number;
@@ -21,7 +22,7 @@ export class Professional implements IProfessional {
 
   public isOfLegalAge(): boolean {
     const professionalIsOfLegalAge = this.age >= 18;
-    
+
     return professionalIsOfLegalAge;
   }
 }

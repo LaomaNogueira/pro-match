@@ -1,4 +1,4 @@
-import { IProject, IProjectsData } from '@/domain/entitites/utils/project.interface';
+import { IProject, IProjectsData } from '@/domain/entities/utils/project.interface';
 
 export class ProjectsManager {
   private projects: IProject[];
