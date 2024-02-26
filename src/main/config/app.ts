@@ -1,3 +1,4 @@
+import 'reflect-metadata';
 import { config } from 'dotenv';
 import express from 'express';
 import { setupRoutes } from '@/main/config/routes';
