@@ -23,6 +23,10 @@ describe('SRC :: APPLICATION :: USE CASES :: CALCULATE ELIGIBILITY SCORE', () =>
       };
     });
 
+    afterEach(() => {
+      jest.resetAllMocks();
+    });
+
     describe('When receiving data from a professional under 18 years of age', () => {
       test('Should return the score value equal 0', async () => {
         defaultProfessionalMock.age = 17;
