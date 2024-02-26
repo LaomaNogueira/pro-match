@@ -1,9 +1,10 @@
+import 'reflect-metadata';
 import { config } from 'dotenv';
-config();
 import express from 'express';
-import { setupMiddlewares } from './middlewares';
-import { setupRoutes } from './routes';
+import { setupRoutes } from '@/main/config/routes';
+import { setupMiddlewares } from '@/main/config/setup-middlewares';
 
+config();
 const app = express();
 setupMiddlewares(app);
 setupRoutes(app);

@@ -1,5 +1,6 @@
 import { CalculateEligibilityScore } from '../../../../src/application/use-cases/calculate-eligibility-score';
-import { IProfessional } from '../../../../src/domain/entitites/utils/professional.interface';
+import { IProfessional } from '../../../../src/domain/entities/utils/professional.interface';
+import { EducationLevel } from '../../../../src/application/use-cases/utils/education-level.enum';
 
 describe('SRC :: APPLICATION :: USE CASES :: CALCULATE ELIGIBILITY SCORE', () => {
   const calculateEligibilityScore: CalculateEligibilityScore = new CalculateEligibilityScore();
@@ -10,7 +11,7 @@ describe('SRC :: APPLICATION :: USE CASES :: CALCULATE ELIGIBILITY SCORE', () =>
     beforeEach(() => {
       defaultProfessionalMock = {
         age: 18,
-        educationLevel: 'no_education',
+        educationLevel: EducationLevel.NO_EDUCATION,
         pastExperiences: {
           sales: false,
           support: false
@@ -44,14 +45,14 @@ describe('SRC :: APPLICATION :: USE CASES :: CALCULATE ELIGIBILITY SCORE', () =>
       });
 
       test('should return score 2, when education level from defaultProfessionalMock is changed to "high_school"', async () => {
-        defaultProfessionalMock.educationLevel = 'high_school';
+        defaultProfessionalMock.educationLevel = EducationLevel.HIGH_SCHOOL;
         const eligibilityScore = await calculateEligibilityScore.execute(defaultProfessionalMock);
 
         expect(eligibilityScore).toEqual(2);
       });
 
       test('should return score 3, when education level from defaultProfessionalMock is changed to "bachelors_degree_or_high"', async () => {
-        defaultProfessionalMock.educationLevel = 'bachelors_degree_or_high';
+        defaultProfessionalMock.educationLevel = EducationLevel.BACHELORS_DEGREE_OR_HIGH;
         const eligibilityScore = await calculateEligibilityScore.execute(defaultProfessionalMock);
 
         expect(eligibilityScore).toEqual(3);

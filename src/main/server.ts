@@ -1,3 +1,4 @@
+import 'reflect-metadata';
 import { app } from './config/app';
 
 const port = process.env.NODE_PORT || 3000;

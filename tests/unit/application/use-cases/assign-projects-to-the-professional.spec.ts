@@ -1,7 +1,8 @@
 import { createMock } from '@golevelup/ts-jest';
 import { CalculateEligibilityScore } from '../../../../src/application/use-cases/calculate-eligibility-score';
 import { AssignProjectsToTheProfessional } from '../../../../src/application/use-cases/assign-projects-to-the-professional';
-import { IProfessional } from '../../../../src/domain/entitites/utils/professional.interface';
+import { IProfessional } from '../../../../src/domain/entities/utils/professional.interface';
+import { EducationLevel } from '../../../../src/application/use-cases/utils/education-level.enum';
 
 describe('SRC :: APPLICATION :: USE CASES :: ASSIGN PROJECTS TO THE PROFESSIONAL', () => {
   const calculateEligibilityScoreMock: CalculateEligibilityScore = createMock<CalculateEligibilityScore>({
@@ -19,7 +20,7 @@ describe('SRC :: APPLICATION :: USE CASES :: ASSIGN PROJECTS TO THE PROFESSIONAL
     beforeEach(() => {
       defaultProfessionalMock = {
         age: 35,
-        educationLevel: 'bachelors_degree_or_high',
+        educationLevel: EducationLevel.BACHELORS_DEGREE_OR_HIGH,
         pastExperiences: {
           sales: true,
           support: false
